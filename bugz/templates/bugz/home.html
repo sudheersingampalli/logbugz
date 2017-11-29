@@ -1,0 +1,23 @@
+<h1>Login</h1>
+<form method = 'POST' action = '#'>
+{% csrf_token %}
+employee id : <input type = 'text' id = 'employee_id' > <br>
+<button type = 'submit'>submit</button>
+
+</form>	
+<!-- <script type="text/javascript">
+	function validate_employee_id(){
+		emp_id = document.getElementById('employee_id').value; 
+		if (emp_id == '422777')
+		{
+			window.open('/bugz/mysummary.html');
+		}
+		else
+		{
+			window.open('bugz/registerbug');
+		}
+
+	}
+</script>
+ -->
+

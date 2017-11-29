@@ -1,0 +1,13 @@
+<h1>this is the summary of all bugs to the sudheer</h1>
+
+{% for bug in bugs%}
+<a href = "{%url 'bugdetails' bug.pk %}">Bug id : {{bug.pk}}</a></br>
+
+Employee id :	{{bug.employee_id}} </br>
+Message : 	{{bug.message}} </br>
+Reason :	{{bug.reason}} </br>
+Record Status :	{{bug.record_stat}} </br>
+
+</br>
+</br>
+{% endfor%}

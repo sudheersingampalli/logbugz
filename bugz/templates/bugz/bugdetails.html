@@ -1,0 +1,12 @@
+<h1>this is bug details page</h1>
+
+<form method = 'POST'>
+	{% csrf_token %}
+	{{bug.pk}}</br>
+	{{bug.employee_id}} </br>
+	{{bug.message}} </br>
+	<!-- <input {{bug.reason}} /></br>
+	<input {{bug.record_stat}} /></br></br>
+	<input type = 'submit' value="save" formaction="{% url 'summary_admin' %}">
+	 --><input type = 'submit' value="back" formaction=" {%url 'summary_admin' %}">
+	</form>

@@ -1,0 +1,11 @@
+<h1>Enter the bug details</h1>
+
+<form method = "POST">
+
+	{% csrf_token %}
+	{{bugform.as_p}}
+		
+    <button type = 'submit'>submit</button>
+</form>
+
+<h2>Search for a bug</h2>
